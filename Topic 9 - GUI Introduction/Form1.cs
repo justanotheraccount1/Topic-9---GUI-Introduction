@@ -21,5 +21,15 @@ namespace Topic_9___GUI_Introduction
         {
 
         }
+
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void imgCharacter_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
