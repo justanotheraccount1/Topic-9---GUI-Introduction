@@ -17,19 +17,37 @@ namespace Topic_9___GUI_Introduction
             InitializeComponent();
         }
 
-        private void MainForm_Load(object sender, EventArgs e)
-        {
+        
 
-        }
+       
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
+            imgCharacter.Visible = true;
+            lblStatus.Text = "Status: Clicked";
+            btnSubmit.Enabled = false;
+            btnQuit.Visible = true;
+            btnQuit.Enabled = true;
+            btnSubmit.Text = "Thank You";
+        }
 
+       
+
+       
+        private void btnQuit_Click(object sender, EventArgs e)
+        {
+            Close();
         }
 
         private void imgCharacter_Click(object sender, EventArgs e)
         {
+            this.BackColor = Color.Black;
+        }
 
+        private void lblIsntructor_DoubleClick(object sender, EventArgs e)
+        {
+            lblIsntructor.BackColor = Color.White;
+            lblIsntructor.ForeColor = Color.Black;
         }
     }
 }
